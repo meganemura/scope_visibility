@@ -14,6 +14,7 @@ module ScopeVisibility
     end
 
     def scope_visibility(bind, binding_from_predicate_method = nil)
+      # If given, use second argument for using binding of predicate method caller
       bind = binding_from_predicate_method if binding_from_predicate_method
 
       method_name = "_scope_visibility_trial".to_sym
